@@ -1,7 +1,7 @@
 <?php
 require_once '../../conf/const.php';
 require_once MODEL_PATH . 'functions.php';
-require_once MODEL_PATH . 'garbage.php';
+require_once MODEL_PATH . 'garbage_function.php';
 
 session_start();
 
@@ -19,10 +19,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $email = get_post('email');
   $area = get_post('area');
   $address = get_post('address');
-
+  
   // 入力値のバリデーションをして、エラーメッセージを表示する
   validate_garbage($type, $comment, $username, $phone_number, $email, $area, $address);
-
+  
 }
 
 // トークンの発行

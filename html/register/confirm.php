@@ -1,7 +1,7 @@
 <?php
 require_once '../../conf/const.php';
 require_once MODEL_PATH . 'functions.php';
-require_once MODEL_PATH . 'garbage.php';
+require_once MODEL_PATH . 'garbage_function.php';
 
 session_start();
 
@@ -22,7 +22,6 @@ $address = get_post('address');
 
 // 入力値のバリデーション
 $is_valid_information = validate_garbage($type, $comment, $username, $phone_number, $email, $area, $address);
-
 // ごみの種類と区を番号から名前に変換
 $garbage_name = garbage_number_to_name($type);
 $area_name = area_number_to_name($area);

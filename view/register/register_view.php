@@ -36,7 +36,7 @@
       <div class="form-group">
         <label for="comment">コメント(任意、200文字以内): </label>
         <p>回収にあたって留意することがある場合、記入してください。</p>
-        <input class="form-control" type="text" name="comment" id="comment" value="<?php if (isset($comment)) {print h($comment);} ?>">
+        <textarea class="form-control" type="text" name="comment" id="comment"><?php if (isset($comment)) {print h($comment);} ?></textarea>
       </div>
 
       <h2 class="border-bottom border-primary">申込者の登録</h2>
@@ -44,15 +44,15 @@
         <label for="username">氏名: </label>
         <input class="form-control" type="text" name="username" id="username" placeholder="例：田中太郎" value="<?php if (isset($username)) {print h($username);} ?>">
       </div>
-      <div class=" form-group">
+      <div class="form-group">
         <label for="phone_number">電話番号(半角数字、ハイフンなし): </label>
         <input class="form-control" type="number" name="phone_number" id="phone_number" placeholder="例：09077322109" value="<?php if (isset($phone_number)) {print h($phone_number);} ?>">
       </div>
-      <div class=" form-group">
+      <div class="orm-group">
         <label for="email">Eメール: </label>
         <input class="form-control" type="email" name="email" id="email" placeholder="例：example@example.com" value="<?php if (isset($email)) {print h($email);} ?>">
       </div>
-      <div class=" form-group">
+      <div class="form-group">
         <label for="area">お住まいの区: </label>
         <select class="form-control" name="area" id="area">
           <option value="0" <?php if($area === '0') { print h('selected');} ?>>千種区</option>

@@ -1,7 +1,8 @@
 <?php
 require_once '../../conf/const.php';
 require_once MODEL_PATH . 'functions.php';
-require_once MODEL_PATH . 'garbage.php';
+require_once MODEL_PATH . 'garbage_function.php';
+require_once MODEL_PATH . 'garbage_insert.php';
 
 session_start();
 
@@ -21,6 +22,7 @@ $email = get_post('email');
 $area = get_post('area');
 $address = get_post('address');
 
+// データベース接続
 $db = get_db_connect();
 
 // garbagesテーブルに保存

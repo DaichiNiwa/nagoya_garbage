@@ -7,6 +7,7 @@ $phone_number;
 $email;
 $area;
 $address;
+$garbages = [];
 // ごみの回収日は申込日の次の水曜とする
 $collect_day = new DateTime('next wednesday');
 
@@ -41,6 +42,8 @@ define('WORKER_GARBAGES_URL', '/worker/garbages.php');
 define('REGEXP_ALPHANUMERIC', '/\A[0-9a-zA-Z]+\z/');
 define('REGEXP_POSITIVE_INTEGER', '/\A([1-9][0-9]*|0)\z/');
 
+// ごみのステータス（0から4の数字)
+define('PERMITTED_GERBAGE_STATUS', '/\A[0-4]\z/');
 // ごみのタイプ（0から6の数字)
 define('PERMITTED_GERBAGE_TYPE', '/\A[0-6]\z/');
 // 区のタイプ（0から12の数字)
@@ -60,6 +63,8 @@ define('LOGIN_ID_LENGTH_MAX', 10);
 define('ADDRESS_LENGTH_MIN', 3);
 define('ADDRESS_LENGTH_MAX', 30);
 define('COMMENT_LENGTH_MAX', 200);
+// ごみ管理画面での表示数
+define('DISPLAY_GARBAGES_NUMBER', 10);
 
 // 発行するトークンの長さを指定
 define('TOKEN_LENGTH', 20);

@@ -48,18 +48,5 @@
       <input type="hidden" name="csrf_token" value="<?php print h($token); ?>">
       <input type="submit" value="<?php $is_valid_information === true ? (print h("確定する")) : (print h("入力画面に戻る")); ?>" class="btn btn-primary">
     </form>
-
-    <!-- <form method="post" action="<?php print h(REGISTER_URL) ?>">
-      <input type="hidden" name="type" value="<?php print h($type) ?>" readonly>
-      <input type="hidden" name="comment" value="<?php print h($comment) ?>" readonly>
-      <input type="hidden" name="username" value="<?php print h($username)  ?>" readonly>
-      <input type="hidden" name="phone_number" value="<?php print h($phone_number) ?>" readonly>
-      <input type="hidden" name="email" value="<?php print h($email) ?>" readonly>
-      <input type="hidden" name="area" value="<?php print h($area) ?>" readonly>
-      <input type="hidden" name="address" value="<?php print h($address) ?>" readonly>
-      トークンを送信 
-      <input type="hidden" name="csrf_token" value="<?php print h($token); ?>">
-      <input type="submit" value="入力画面に戻る" class="btn btn-info mt-1">
-    </form> -->
   </div>
 </body>
