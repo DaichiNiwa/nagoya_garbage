@@ -7,19 +7,19 @@
     <div class="collapse navbar-collapse" id="headerNav">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="<?php print h(INDEX_URL); ?>">このサイトについて</a>
+          <a class="nav-link" href="<?php print h(WORKER_ASSIGNED_URL);?>">担当地域のごみ一覧</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?php print h(REGISTER_URL); ?>">申込</a>
+          <a class="nav-link" href="<?php print h(WORKER_GARBAGES_URL);?>">すべてのごみ</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?php print h(ADMIN_LOGIN_URL); ?>">管理者ログイン</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="<?php print h(WORKER_LOGIN_URL); ?>">作業員ログイン</a>
+          <a class="nav-link" href="<?php print h(WORKER_LOGOUT_URL);?>">ログアウト</a>
         </li>
       </ul>
     </div>
   </nav>
-  <p>※このサイトは本物ではありません。</p>
+  <div class="d-flex justify-content-between p-2">
+    <p>※このサイトは本物ではありません。</p>
+    <p class="text-right">ログイン中: <?php print h($worker['worker_name']);?>さん</p>
+  </div>
 </header>

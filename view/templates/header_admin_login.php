@@ -7,16 +7,16 @@
     <div class="collapse navbar-collapse" id="headerNav">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="<?php print h(INDEX_URL); ?>">このサイトについて</a>
+          <a class="nav-link" href="<?php print h(ADMIN_GARBAGES_URL);?>">ごみ一覧</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?php print h(REGISTER_URL); ?>">申込</a>
+          <a class="nav-link" href="<?php print h(ADMIN_WORKERS_URL);?>">作業員一覧</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?php print h(ADMIN_LOGIN_URL); ?>">管理者ログイン</a>
+          <a class="nav-link" href="<?php print h(ADMIN_ADMIN_URL);?>">IDパスワード変更</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?php print h(WORKER_LOGIN_URL); ?>">作業員ログイン</a>
+          <a class="nav-link" href="<?php print h(ADMIN_LOGOUT_URL);?>">ログアウト</a>
         </li>
       </ul>
     </div>

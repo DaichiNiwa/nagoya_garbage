@@ -17,6 +17,7 @@ function get_db_connect()
   return $dbh;
 }
 
+// テーブルから１件取得する
 function fetch_query($db, $sql, $params = array())
 {
   try {
@@ -29,6 +30,7 @@ function fetch_query($db, $sql, $params = array())
   return false;
 }
 
+// テーブルから複数件取得する
 function fetch_all_query($db, $sql, $params = array())
 {
   try {
@@ -41,6 +43,7 @@ function fetch_all_query($db, $sql, $params = array())
   return false;
 }
 
+// テーブルを更新する
 function execute_query($db, $sql, $params = array())
 {
   try {

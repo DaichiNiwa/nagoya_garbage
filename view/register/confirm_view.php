@@ -7,13 +7,9 @@
 </head>
 
 <body>
-  <?php
-  include VIEW_PATH . 'templates/header.php';
-  ?>
+  <?php include VIEW_PATH . 'templates/header.php';?>
   <div class="container">
-    
-    <h1>入力の確認</h1>
-    <!--　入力値に間違いがあればエラーメッセージを表示  -->
+    <h1>入力の確認/名古屋市粗大ごみ</h1>
     <?php include VIEW_PATH . 'templates/messages.php'; ?>
 
     <h2 class="border-bottom border-primary">ごみの登録</h2>
@@ -44,7 +40,6 @@
       <input type="hidden" name="email" value="<?php print h($email) ?>" readonly>
       <input type="hidden" name="area" value="<?php print h($area) ?>" readonly>
       <input type="hidden" name="address" value="<?php print h($address) ?>" readonly>
-      <!-- トークンを送信 -->
       <input type="hidden" name="csrf_token" value="<?php print h($token); ?>">
       <input type="submit" value="<?php $is_valid_information === true ? (print h("確定する")) : (print h("入力画面に戻る")); ?>" class="btn btn-primary">
     </form>

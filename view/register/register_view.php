@@ -7,13 +7,10 @@
 </head>
 
 <body>
-  <?php
-  include VIEW_PATH . 'templates/header.php';
-  ?>
+  <?php include VIEW_PATH . 'templates/header.php';?>
 
   <div class="container">
     <h1>回収申し込み</h1>
-    <!--　入力値に間違いがあればエラーメッセージを表示  -->
     <?php include VIEW_PATH . 'templates/messages.php'; ?>
     <h2 class="border-bottom border-primary">ごみの登録</h2>
     <p>回収予定日: <?php print h($collect_day->format('Y年m月d日')); ?>（水）</p>
@@ -36,21 +33,21 @@
       <div class="form-group">
         <label for="comment">コメント(任意、200文字以内): </label>
         <p>回収にあたって留意することがある場合、記入してください。</p>
-        <textarea class="form-control" type="text" name="comment" id="comment"><?php if (isset($comment)) {print h($comment);} ?></textarea>
+        <textarea class="form-control" type="text" name="comment" id="comment"><?php if(isset($comment)) {print h($comment);} ?></textarea>
       </div>
 
       <h2 class="border-bottom border-primary">申込者の登録</h2>
       <div class="form-group">
         <label for="username">氏名: </label>
-        <input class="form-control" type="text" name="username" id="username" placeholder="例：田中太郎" value="<?php if (isset($username)) {print h($username);} ?>">
+        <input class="form-control" type="text" name="username" id="username" placeholder="例：田中太郎" value="<?php if(isset($username)) {print h($username);} ?>">
       </div>
       <div class="form-group">
         <label for="phone_number">電話番号(半角数字、ハイフンなし): </label>
-        <input class="form-control" type="number" name="phone_number" id="phone_number" placeholder="例：09077322109" value="<?php if (isset($phone_number)) {print h($phone_number);} ?>">
+        <input class="form-control" type="number" name="phone_number" id="phone_number" placeholder="例：09077322109" value="<?php if(isset($phone_number)) {print h($phone_number);} ?>">
       </div>
-      <div class="orm-group">
+      <div class="form-group">
         <label for="email">Eメール: </label>
-        <input class="form-control" type="email" name="email" id="email" placeholder="例：example@example.com" value="<?php if (isset($email)) {print h($email);} ?>">
+        <input class="form-control" type="email" name="email" id="email" placeholder="例：example@example.com" value="<?php if(isset($email)) {print h($email);} ?>">
       </div>
       <div class="form-group">
         <label for="area">お住まいの区: </label>
@@ -75,7 +72,6 @@
         <input class="form-control" type="text" name="address" id="address" placeholder="例：平針１ー７２４　グランドコープ３０７" value="<?php if (isset($address)) {print h($address);} ?>">
       </div>
 
-      <!-- トークンを送信 -->
       <input type="hidden" name="csrf_token" value="<?php print h($token); ?>">
       <input type="submit" value="確認画面へ" class="btn btn-primary">
     </form>

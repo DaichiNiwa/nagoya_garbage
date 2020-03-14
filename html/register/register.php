@@ -22,7 +22,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   
   // 入力値のバリデーションをして、エラーメッセージを表示する
   validate_garbage($type, $comment, $username, $phone_number, $email, $area, $address);
-  
 }
 
 // トークンの発行

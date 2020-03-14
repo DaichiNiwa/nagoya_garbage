@@ -3,16 +3,14 @@
 
 <head>
   <?php include VIEW_PATH . 'templates/head.php'; ?>
-  <title>ごみ一覧/名古屋市粗大ごみ</title>
+  <title>条件検索/名古屋市粗大ごみ</title>
 </head>
 
 <body>
-  <?php
-  include VIEW_PATH . 'templates/header.php';
-  ?>
+  <?php include VIEW_PATH . 'templates/header_admin_login.php';?>
 
   <div class="container">
-    <h1>ごみ一覧（管理者用）</h1>
+    <h1>条件検索（管理者用）</h1>
     <h2 class="border-bottom border-primary">検索結果</h2>
     <?php include VIEW_PATH . 'templates/messages.php'; ?>
 
@@ -52,7 +50,7 @@
     </div>
     <p><?php print h($garbages_amount); ?>件見つかりました。</p>
 
-    <?php if(($garbages_amount) > 0){ ?>
+    <?php if($garbages_amount > 0){ ?>
       <div class="text-center">
         <?php foreach($garbages as $garbage){ ?>
           <div class="border border-primary" style="background-color: <?php print h($garbage['bg_color']); ?>;">
@@ -103,7 +101,7 @@
             
             <div class="row m-0">
               <div class="col-md-4 border">回収: <?php print h($garbage['collect_day']); ?></div>
-              <div class="col-md-5 border">担当者: 田中龍夫</div>
+              <div class="col-md-5 border">担当者: <?php print h($garbage['worker_name']); ?></div>
               <div class="col-md-3 border">
                 <button type="button" class="btn mb-0 btn-warning" data-toggle="modal" data-target="#modal-<?php print h($garbage['garbage_id']); ?>">コメント記入</button>
               </div>
@@ -145,14 +143,12 @@
           </div>
         <?php } ?>
       </div>
-    <?php } else { ?>
-      <p>ごみはありません。</p>
     <?php } ?> 
   </div> 
 
-<script>
+  <script>
     $('.delete').on('click', () => confirm('本当に削除しますか？'))
     $('[data-toggle="popover"]').popover()
-  
   </script>
 </body>
+</html>

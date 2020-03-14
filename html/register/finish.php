@@ -28,7 +28,7 @@ $db = get_db_connect();
 // garbagesテーブルに保存
 if(regist_garbage($db, $collect_day->format('Y-m-d'), $type, $comment, $username, $phone_number, $email, $area, $address)){
   set_message('申し込みが完了しました。');
-}else {
+} else {
   set_error('登録に失敗しました。最初の画面に戻ってください。');
 }
 

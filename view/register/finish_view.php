@@ -7,12 +7,8 @@
 </head>
 
 <body>
-  <?php
-  include VIEW_PATH . 'templates/header.php';
-  ?>
+  <?php include VIEW_PATH . 'templates/header.php';?>
   <div class="container">
-    
-    <!--　正しく申込完了すれば成功メッセージ、入力値に間違いがあればエラーメッセージを表示  -->
     <?php include VIEW_PATH . 'templates/messages.php'; ?>
     <a class="btn btn-success mt-1 mb-1" role="button" href="<?php print h(REGISTER_URL) ?>">最初の画面に戻る</a>
 
@@ -34,7 +30,5 @@
     <p><?php print h($area_name); ?></p>
     <p>以下の住所:</p>
     <p><?php print h($address); ?></p>
-
-    
   </div>
 </body>
