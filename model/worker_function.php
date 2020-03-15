@@ -50,6 +50,7 @@ function worker_login($db, $login_id, $password){
     return false;
   }
   
+  session_regenerate_id(true);
   set_session('worker_login_id', $worker['login_id']);
   set_message('ログインしました。');
   return true;

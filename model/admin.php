@@ -87,6 +87,7 @@ function admin_login($db, $login_id, $password){
     return false;
   }
 
+  session_regenerate_id(true);
   set_session('admin_login_id', $admin['login_id']);
   set_message('ログインしました。');
   return true;
