@@ -88,11 +88,11 @@
               <div class="form-group col-md-3 border m-0">
                 <form method="post" action="garbage_change_status.php" class="row">
                   <select class="form-control col" name="status" id="status">
-                    <option value="0" <?php if($garbage['status'] === 0) { print h('selected');} ?>>未回収</option>
-                    <option value="1" <?php if($garbage['status'] === 1) { print h('selected');} ?>>回収済</option>
-                    <option value="2" <?php if($garbage['status'] === 2) { print h('selected');} ?>>回収前保留</option>
-                    <option value="3" <?php if($garbage['status'] === 3) { print h('selected');} ?>>回収後保留</option>
-                    <option value="4" <?php if($garbage['status'] === 4) { print h('selected');} ?>>回収不可</option>
+                    <option value="0" <?php if($garbage['status'] === '0') { print h('selected');} ?>>未回収</option>
+                    <option value="1" <?php if($garbage['status'] === '1') { print h('selected');} ?>>回収済</option>
+                    <option value="2" <?php if($garbage['status'] === '2') { print h('selected');} ?>>回収前保留</option>
+                    <option value="3" <?php if($garbage['status'] === '3') { print h('selected');} ?>>回収後保留</option>
+                    <option value="4" <?php if($garbage['status'] === '4') { print h('selected');} ?>>回収不可</option>
                   </select>
                   <input type="hidden" name="garbage_id" value="<?php print h($garbage['garbage_id']); ?>">
                   <input type="hidden" name="csrf_token" value="<?php print h($token); ?>">
