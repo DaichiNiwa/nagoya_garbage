@@ -16,5 +16,6 @@
     <a class="btn btn-secondary m-2" href="<?php print h(REGISTER_URL); ?>">市民用ページへ</a>
     <a class="btn btn-info m-2" href="<?php print h(ADMIN_LOGIN_URL); ?>">管理者用ページへ</a>
     <a class="btn btn-primary m-2" href="<?php print h(WORKER_LOGIN_URL); ?>">回収作業員用ページへ</a>
+    <p><a class="btn btn-warning m-2" href="<?php print h(PORTFOLIO_URL); ?>">ポートフォリオサイトへ</a></p>
   </div>
 </body>

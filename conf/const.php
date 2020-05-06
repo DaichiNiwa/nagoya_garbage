@@ -9,7 +9,7 @@ define('VIEW_PATH', $_SERVER['DOCUMENT_ROOT'] . '/../view/');
 
 define('STYLESHEET_PATH', '/assets/css/');
 
-// データベース接続
+// データベース接続（本番環境で変更）
 define('DB_HOST', 'mysql');
 define('DB_NAME', 'sample');
 define('DB_USER', 'testuser');
@@ -34,6 +34,9 @@ define('WORKER_LOGIN_URL', '/worker/login.php');
 define('WORKER_LOGOUT_URL', '/worker/logout.php');
 define('WORKER_GARBAGES_URL', '/worker/garbages/garbages.php');
 define('WORKER_ASSIGNED_URL', '/worker/garbages/garbages_assigned.php');
+
+// ポートフォリオサイトのURL
+define('PORTFOLIO_URL', 'https://daichi-portfolio.com/');
 
 // バリデーション文字制限
 define('REGEXP_ALPHANUMERIC', '/\A[0-9a-zA-Z]+\z/');
