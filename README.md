@@ -1,7 +1,8 @@
 # 名古屋市粗大ごみ回収システム nagoya_garbage
 2020年3月制作  
 自治体の粗大ごみ収集・管理ができるアプリケーションです。
-市民が粗大ごみの回収を申請するところから、職員（管理者）が申請されたごみを管理、回収作業員がごみリストを見ながら回収していくところまで行うことができます。  
+市民が粗大ごみの回収を申請するところから、職員（管理者）が申請されたごみを管理、回収作業員がごみリストを見ながら回収していくところまで行うことができます。    
+デモサイト  
 http://nagoya-garbage.xyz/index.php  
 設計書(GoogleDrive)  
 https://docs.google.com/spreadsheets/d/1x8p0Jbtv2BLuiXahS9KGt7IAlRcI0jdwpz9-lW4oEfg/edit?usp=sharing
