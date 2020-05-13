@@ -45,19 +45,19 @@
             <div class="form-group col-md-3 border m-0">
               <form method="post" action="worker_change_area.php" class="row">
                 <select class="form-control col" name="area" id="area">
-                  <option value="0" <?php if($worker['area'] === 0) { print h('selected');} ?>>千種区</option>
-                  <option value="1" <?php if($worker['area'] === 1) { print h('selected');} ?>>東区</option>
-                  <option value="2" <?php if($worker['area'] === 2) { print h('selected');} ?>>北区</option>
-                  <option value="3" <?php if($worker['area'] === 3) { print h('selected');} ?>>西区</option>
-                  <option value="4" <?php if($worker['area'] === 4) { print h('selected');} ?>>中村区</option>
-                  <option value="5" <?php if($worker['area'] === 5) { print h('selected');} ?>>中区</option>
-                  <option value="6" <?php if($worker['area'] === 6) { print h('selected');} ?>>昭和区</option>
-                  <option value="7" <?php if($worker['area'] === 7) { print h('selected');} ?>>瑞穂区</option>
-                  <option value="8" <?php if($worker['area'] === 8) { print h('selected');} ?>>熱田区</option>
-                  <option value="9" <?php if($worker['area'] === 9) { print h('selected');} ?>>中川区</option>
-                  <option value="10" <?php if($worker['area'] === 10) { print h('selected');} ?>>港区</option>
-                  <option value="11" <?php if($worker['area'] === 11) { print h('selected');} ?>>名東区</option>
-                  <option value="12" <?php if($worker['area'] === 12) { print h('selected');} ?>>天白区</option>
+                  <option value="0" <?php if($worker['area'] === '0') { print h('selected');} ?>>千種区</option>
+                  <option value="1" <?php if($worker['area'] === '1') { print h('selected');} ?>>東区</option>
+                  <option value="2" <?php if($worker['area'] === '2') { print h('selected');} ?>>北区</option>
+                  <option value="3" <?php if($worker['area'] === '3') { print h('selected');} ?>>西区</option>
+                  <option value="4" <?php if($worker['area'] === '4') { print h('selected');} ?>>中村区</option>
+                  <option value="5" <?php if($worker['area'] === '5') { print h('selected');} ?>>中区</option>
+                  <option value="6" <?php if($worker['area'] === '6') { print h('selected');} ?>>昭和区</option>
+                  <option value="7" <?php if($worker['area'] === '7') { print h('selected');} ?>>瑞穂区</option>
+                  <option value="8" <?php if($worker['area'] === '8') { print h('selected');} ?>>熱田区</option>
+                  <option value="9" <?php if($worker['area'] === '9') { print h('selected');} ?>>中川区</option>
+                  <option value="10" <?php if($worker['area'] === '10') { print h('selected');} ?>>港区</option>
+                  <option value="11" <?php if($worker['area'] === '11') { print h('selected');} ?>>名東区</option>
+                  <option value="12" <?php if($worker['area'] === '12') { print h('selected');} ?>>天白区</option>
                 </select>
                 <input type="hidden" name="worker_id" value="<?php print h($worker['worker_id']); ?>">
                 <input type="hidden" name="csrf_token" value="<?php print h($token); ?>">
