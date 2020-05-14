@@ -4,7 +4,7 @@
 市民が粗大ごみの回収を申請するところから、職員（管理者）が申請されたごみを管理、回収作業員がごみリストを見ながら回収していくところまで行うことができます。  
   
 デモサイト  
-http://nagoya-garbage.xyz/index.php  
+https://nagoya-garbage.xyz/index.php  
 設計書(GoogleDrive)  
 https://docs.google.com/spreadsheets/d/1x8p0Jbtv2BLuiXahS9KGt7IAlRcI0jdwpz9-lW4oEfg/edit?usp=sharing
 # 開発の目的
