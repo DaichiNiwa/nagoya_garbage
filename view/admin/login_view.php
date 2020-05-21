@@ -11,6 +11,7 @@
   <div class="container">
     <h1>管理者ログイン</h1>
     <?php include VIEW_PATH . 'templates/messages.php'; ?>
+    <p>ログインID: admin、パスワード: passwordでログインできます。</p>
 
     <form method="post" action="login_process.php" class="login_form mx-auto">
       <div class="form-group">
@@ -24,7 +25,6 @@
       <input type="hidden" name="csrf_token" value="<?php print h($token); ?>">
       <input type="submit" value="ログイン" class="btn btn-info">
     </form>
-    <p>ログインID: admin、パスワード: passwordでログインできます。</p>
   </div>
 </body>
 </html>
