@@ -5,7 +5,7 @@
   
 デモサイト  
 https://nagoya-garbage.xyz/index.php  
-設計書(GoogleDrive)  
+設計書  
 https://docs.google.com/spreadsheets/d/1x8p0Jbtv2BLuiXahS9KGt7IAlRcI0jdwpz9-lW4oEfg/edit?usp=sharing
 # 開発の目的
 * 自治体による粗大ごみの回収がどんなシステムで行われているのか気になったので、自分で作ってみたくなった。また粗大ゴミの回収には市民、市役所職員、回収作業員の3者が関わっており、それぞれの立場で使いやすいシステムはどんなか考えながら作るのが楽しそうだと思った。
